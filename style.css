@@ -1,0 +1,100 @@
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.logo{
+    width: 60px;
+    margin-top: -20px;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    padding: 20px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    width: 20%;
+    position: relative;
+    transition: transform 1000ms;
+    display: block;
+}
+
+.container img{
+    width: 100%;
+    opacity: 1;
+    height: auto;
+    display: block;
+}
+
+.row .container:focus,
+.row .container:hover{
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+.container:hover .middle{
+    opacity: 1;
+}
+
+.middle{
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s ease;
+    opacity: 0;
+    text-align: center;
+}
+
+.text{
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    padding: 30px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px){
+
+body {
+    background-color: lightgreen;
+}
+
+.container{
+    width: 100%;
+}
+
+.row .container:focus,
+.row .container:hover{
+    transform: none;
+    z-index: 1;
+}
+
+.footer{
+    position: relative;
+}
+}
