@@ -1,2 +1,2 @@
 ﻿# Responsive-Gallery-Protfolio
-adsfadf
+A sample responsive images gallery page using only HTML and CSS
